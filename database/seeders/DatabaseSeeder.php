@@ -20,7 +20,10 @@ class DatabaseSeeder extends Seeder
     {
 
         /*create users*/
-        User::factory(10)->create();
+//        User::factory(10)->create();
+        $this->call([
+            SerivceSeeder::class
+        ]);
 
     }
 }
