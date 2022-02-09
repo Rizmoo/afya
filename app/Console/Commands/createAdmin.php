@@ -73,7 +73,7 @@ class createAdmin extends Command
 //        }
         DB::beginTransaction();
         try {
-            $role =  Role::where('name','admin')->first();
+            $role =  Role::where('name','Admin')->first();
             $user = new User();
             $user ->first_name = 'super';
             $user ->last_name = 'admin';
