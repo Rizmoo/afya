@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\ServiceCategory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
@@ -16,15 +17,10 @@ class SerivceSeeder extends Seeder
     public function run()
     {
 
-       $serv =  DB::table('service_categories')->updateOrInsert(
-           [
-               'name' =>'Lab services'
-           ],
-           [
-            'uuid' =>Str::uuid(),
-           ]
-       );
-
+       $serv = ServiceCategory::create([
+           'name'=> 'Lab services',
+           'uuid'=> Str::uuid(),
+       ]);
         DB::table('services')->insert(
             [
                 [

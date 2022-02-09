@@ -17,20 +17,16 @@
                <div class="col-lg-4 col-md-4">
                     <div class="pricing_wrap">
                         <div class="prt_head">
-                            <h4 class="ft-medium">Basic</h4>
+                            <h4 class="ft-medium">{{ $plan -> name }}</h4>
                         </div>
                         <div class="prt_price">
-                            <h2 class="ft-bold"><span>$</span>29</h2>
-                            <span class="fs-md">per user, per month</span>
+                            <h2 class="ft-bold"><span>{{ $plan -> currency }}</span>{{ $plan -> price }}</h2>
+                            <span class="fs-md"> per {{ $plan -> invoice_interval }}</span>
                         </div>
                         <div class="prt_body">
-                            <ul>
-                                <li>99.5% Uptime Guarantee</li>
-                                <li>120GB CDN Bandwidth</li>
-                                <li>5GB Cloud Storage</li>
-                                <li class="none">Personal Help Support</li>
-                                <li class="none">Enterprise SLA</li>
-                            </ul>
+                            <p>
+                                {{ $plan -> description }}
+                            </p>
                         </div>
                         <div class="prt_footer">
                             @if(auth()->check())
