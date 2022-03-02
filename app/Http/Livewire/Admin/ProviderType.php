@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Admin;
 
+use Illuminate\Support\Str;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Livewire\WithPagination;
@@ -33,6 +34,7 @@ class ProviderType extends Component
             $item = $this->active;
         }else{
             $item = new \App\Models\ProviderType();
+            $item -> uuid = Str::uuid();
         }
 
 

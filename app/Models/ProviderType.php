@@ -15,10 +15,10 @@ class ProviderType extends Model implements HasMedia
     use HasFactory, HasSlug;
     use InteractsWithMedia, LastMedia;
 
-    public function getRouteKeyName()
-    {
-        return 'uuid';
-    }
+//    public function getRouteKeyName()
+//    {
+//        return 'uuid';
+//    }
 
     public function getSlugOptions(): SlugOptions
     {
