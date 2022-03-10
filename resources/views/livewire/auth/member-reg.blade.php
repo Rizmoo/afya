@@ -28,28 +28,8 @@
                                         <x-jet-input-error for="name"></x-jet-input-error>
                                     </div>
                                     <input type="hidden" name="type" value="customer" >
-                                    <div class="form-group">
-                                        <label class="form-label" for="basic-icon-default-fullname">Occupation </label>
-                                        <select  name="profession" class="form-control" wire:model="profession" >
-                                            <option value="professional"> Professional  </option>
-                                            <option value="student">Student</option>
-                                        </select>
-                                        @error('profession') <span class="text-danger error">{{ $message }}</span>@enderror
-                                    </div>
 
-                                    @if($profession == 'student')
-                                        <div class="form-group">
-                                            <x-jet-label value="{{ __('Expected Graduation year') }}" />
 
-                                            <select  name="graduation_yr" class="form-control" wire:model="graduation_yr" >
-                                                @for ($i = date('Y'); $i < date('Y') + 7; $i++)
-                                                    <option > {{ $i }}  </option>
-                                                @endfor
-
-                                            </select>
-                                            <x-jet-input-error for="graduation_yr"></x-jet-input-error>
-                                        </div>
-                                    @endif
 
                                     <div class="form-group">
                                         <x-jet-label value="{{ __('Email') }}" />
@@ -57,13 +37,6 @@
                                         <x-jet-input wire:model="email" class="{{ $errors->has('email') ? 'is-invalid' : '' }}" type="email" name="email"
                                                      :value="old('email')"  />
                                         <x-jet-input-error for="email"></x-jet-input-error>
-                                    </div>
-                                    <div class="form-group">
-                                        <x-jet-label value="{{ __('Phone Number') }}" />
-
-                                        <x-jet-input wire:model="phone_number" class="{{ $errors->has('phone_number') ? 'is-invalid' : '' }}" type="text" name="phone_number"
-                                                     :value="old('phone_number')"  />
-                                        <x-jet-input-error for="phone_number"></x-jet-input-error>
                                     </div>
 
                                     <div class="form-group">

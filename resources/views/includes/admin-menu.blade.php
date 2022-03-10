@@ -10,12 +10,12 @@
     <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
         <li class=" navigation-header">
-            <span data-i18n="Apps &amp; Pages">Merchants</span>
+            <span data-i18n="Apps &amp; Pages">Providers</span>
         </li>
         <li class="nav-item has-sub">
             <a class="d-flex align-items-center" href="#">
                 <i data-feather='shopping-bag'></i>
-                <span class="menu-title text-truncate" data-i18n="Dashboards">Merchants</span>
+                <span class="menu-title text-truncate" data-i18n="Dashboards">Providers</span>
             </a>
             <ul class="menu-content">
                 <li>
@@ -59,7 +59,7 @@
         <li class="nav-item has-sub">
             <a class="d-flex align-items-center" href="#">
                 <i data-feather='shopping-bag'></i>
-                <span class="menu-title text-truncate" data-i18n="Dashboards">Inventory</span>
+                <span class="menu-title text-truncate" data-i18n="Dashboards">Services</span>
             </a>
             <ul class="menu-content">
                 <li>

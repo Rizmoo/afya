@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-if (\Illuminate\Support\Facades\App::environment('production')) {
-    \Illuminate\Support\Facades\URL::forceScheme('https');
-}
+//if (\Illuminate\Support\Facades\App::environment('production')) {
+//    \Illuminate\Support\Facades\URL::forceScheme('https');
+//}
 
 Route::get('/', function () {
     return view('welcome');

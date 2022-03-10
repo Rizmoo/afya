@@ -27,5 +27,7 @@
 {{--        </g>--}}
 {{--    </svg>--}}
 
-    <img src="{{ asset('logo.png') }}" height="100">
+{{--    <img src="{{ asset('logo.png') }}" height="100">--}}
+
+    Afya
 </a>
