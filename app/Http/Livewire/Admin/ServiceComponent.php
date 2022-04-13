@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Admin;
 
 use App\Models\Service;
 use App\Models\ServiceCategory;
+use Illuminate\Support\Str;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Livewire\WithPagination;
@@ -42,6 +43,7 @@ class ServiceComponent extends Component
             $item = $this->active;
         }else{
             $item = new Service();
+            $item ->uuid = Str::uuid();
         }
 
 
