@@ -7,12 +7,10 @@
                 <div class="col-xl-6 col-lg-9 col-md-12 col-sm-12 col-12">
                     <div class="banner_caption text-left mb-4">
                         <h1 class="banner_title ft-bold mb-1">Get  <span class="theme-cl">Health Services</span><br>On Afya</h1>
-                        <p class="fs-md ft-regular">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                        <p class="fs-md ft-regular">Welcome to Afya</p>
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-12">
-
-
 
                 </div>
             </div>
