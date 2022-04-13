@@ -38,11 +38,11 @@ class PlansComponent extends Component
             'name' => $this->name,
             'description' => $this->description,
             'price' => $this->price,
-            'signup_fee' => 1.99,
+            'signup_fee' => 0,
             'invoice_period' => (string) $this->invoice_period,
-            'invoice_interval' => $this->invoice_interval,
+            'invoice_interval' => 'month',
             'trial_period' => (int) $this->trail_period,
-            'trial_interval' =>  (string)$this->trail_interval,
+            'trial_interval' =>  'day',
             'currency' => 'KES',
         ]);
         $this->emit('created');
@@ -70,11 +70,11 @@ class PlansComponent extends Component
             'name' => $this->name,
             'description' => $this->description,
             'price' => $this->price,
-            'signup_fee' => 1.99,
+            'signup_fee' => 0,
             'invoice_period' => (string) $this->invoice_period,
-            'invoice_interval' =>$this->invoice_interval,
+            'invoice_interval' =>'month',
 //        'trial_period' => (string) $this->trail_period,
-//        'trial_interval' => (int)$this->trail_interval,
+          'trial_interval' => 'day',
             'currency' => 'KES',
         ]);
         $this->resetAll();
