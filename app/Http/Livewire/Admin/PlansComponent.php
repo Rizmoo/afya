@@ -75,7 +75,7 @@ class PlansComponent extends Component
             'invoice_interval' =>$this->invoice_interval,
 //        'trial_period' => (string) $this->trail_period,
 //        'trial_interval' => (int)$this->trail_interval,
-            'currency' => '€',
+            'currency' => 'KES',
         ]);
         $this->resetAll();
         $this->emit('created');

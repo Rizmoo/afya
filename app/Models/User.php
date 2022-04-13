@@ -16,8 +16,8 @@ use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
 use Laravelista\Comments\Commenter;
 use Rinvex\Subscriptions\Traits\HasPlanSubscriptions;
-use Rinvex\Subscriptions\Traits\HasSubscriptions;
 
+//use Rinvex\Subscriptions\Traits\HasPlanSubscriptions;
 class User extends Authenticatable implements Wallet, WalletFloat
 {
     use HasApiTokens;
