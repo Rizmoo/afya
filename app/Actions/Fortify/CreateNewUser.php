@@ -76,7 +76,7 @@ class CreateNewUser implements CreatesNewUsers
                 $inv->plan_id = $plan->id;
                 $inv ->save();
             } else {
-                $user->newSubscription($plan->name . ' - ' . 'Main', $plan);
+                $user-> newPlanSubscription($plan->name . ' - ' . 'Main', $plan);
             }
         }
 
