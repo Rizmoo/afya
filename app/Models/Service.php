@@ -14,10 +14,10 @@ class Service extends Model implements HasMedia
     use InteractsWithMedia, LastMedia;
 
 
-    public function getRouteKeyName()
-    {
-        return 'uuid';
-    }
+//    public function getRouteKeyName()
+//    {
+//        return 'uuid';
+//    }
 
     public function category()
     {
